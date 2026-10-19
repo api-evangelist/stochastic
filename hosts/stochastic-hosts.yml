@@ -1,0 +1,40 @@
+generated: '2026-10-19'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 2
+  own: 2
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - website
+hosts:
+- host: api.stochastic.ai
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: stochastic.ai
+  role: api
+  relation: own
+- host: stochastic.ai
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  - Blog
+  - TermsOfService
+  - PrivacyPolicy
+  - Contact
+  - About
+  serves:
+  - docs
+  registrable_domain: stochastic.ai
+  role: website
+  relation: own

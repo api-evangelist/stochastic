@@ -1,0 +1,13 @@
+generated: '2026-10-19'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://stochastic.ai/privacy-policy
+sources:
+- https://stochastic.ai/privacy-policy
+standards:
+- id: hipaa
+  conforms: true
+  evidence: Protected Health Information (HIPAA) We do not collect or process Protected Health Information (“PHI”) by default. If you choose to
+    use a Service that we expressly designate in writing as eligible for HIPAA‑regulated data, and we have entered into a signed Business Associate
+    Agreement (“BAA”) with you where required, we may receive, maintain, transmit, or process PHI solely on your behalf...
+docs: https://stochastic.ai/privacy-policy

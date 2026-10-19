@@ -1,25 +1,76 @@
 aid: stochastic
+
 name: Stochastic
-description: 'Stochastic is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Stochastic builds adaptive autonomous real‑time trusted intelligent interfaces, delivering multimodal AI agents for enterprises. Their platform enables healthcare, finance, and other sectors to automate complex workflows, improve patient scheduling, and enhance decision‑making with trustworthy AI agents.'
+
 url: https://raw.githubusercontent.com/api-evangelist/stochastic/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-19 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-18'
+
 modified: '2026-10-18'
+
 tags:
 - Company
-apis: []
+- AI
+- Enterprise
+- Healthcare
+- Automation
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Conformance
+  url: conformance/stochastic-conformance.yml
+- type: Hosts
+  url: hosts/stochastic-hosts.yml
+- type: GitHubOrganization
+  url: https://github.com/stochasticai
 - type: DomainSecurity
   url: security/stochastic-domain-security.yml
 - type: Website
   url: https://stochastic.ai/
+
+- type: Blog
+  url: https://stochastic.ai/blog
+- type: TermsOfService
+  url: https://stochastic.ai/terms-of-service
+- type: PrivacyPolicy
+  url: https://stochastic.ai/privacy-policy
+- type: Contact
+  url: https://stochastic.ai/contact
+- type: About
+  url: https://stochastic.ai/about
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-19'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://stochastic.ai/
+    status: 200
+x-enrichment:
+  date: '2026-10-19'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
